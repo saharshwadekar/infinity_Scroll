@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Scroll</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Unsplash API - Infinity Scroll</h1>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="margin: auto; background: transparent; display: block"
+        width="101px"
+        height="101px"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid"
+      >
+        <path
+          fill="none"
+          stroke="#787878"
+          stroke-width="8"
+          stroke-dasharray="166.78280334472657 89.80612487792968"
+          d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z"
+          stroke-linecap="round"
+          style="transform: scale(0.81); transform-origin: 50px 50px"
+        >
+          <animate
+            attributeName="stroke-dashoffset"
+            repeatCount="indefinite"
+            dur="2.564102564102564s"
+            keyTimes="0;1"
+            values="0;256.58892822265625"
+          ></animate>
+        </path>
+      </svg>
+    </div>
+    <!-- Images -->
+    <div class="image-container" id="image-container">
+    </div>
     <!-- Script JS -->
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
